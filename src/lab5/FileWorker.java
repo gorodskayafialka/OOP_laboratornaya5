@@ -3,7 +3,7 @@ package lab5;
 import java.io.*;
 import java.util.ArrayList;
 
-class FileWorker 
+class FileWorker
 {
     void writeList(ArrayList<Shape> shapes, String filename) throws IOException
     {

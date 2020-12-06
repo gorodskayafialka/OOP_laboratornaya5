@@ -17,14 +17,17 @@ public class Main {
         try {
             fileWorker.writeList(shapesToWrite, "C:\\Users\\Ксения Лучкова\\IdeaProjects\\Files\\SavedShapes.dat");
         } catch (IOException e) {
-            e.printStackTrace();
+           System.out.println("Failed to save the list");
+           return;
         }
         try {
             readShapes = fileWorker.readList("C:\\Users\\Ксения Лучкова\\IdeaProjects\\Files\\SavedShapes.dat");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Failed to read the list");
+            return;
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("Failed to read the list");
+            return;
         }
         System.out.println(readShapes);
     }
